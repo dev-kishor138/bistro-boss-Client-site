@@ -1,0 +1,18 @@
+.react-tabs {
+    text-align: center;
+}
+
+.react-tabs__tab-list {
+    border: 0;
+}
+
+.react-tabs__tab {
+    text-transform: uppercase;
+    border: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.react-tabs__tab--selected {
+    color: #BB8506;
+    border-color: #BB8506;
+}

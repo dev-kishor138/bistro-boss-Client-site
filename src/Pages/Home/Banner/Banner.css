@@ -1,0 +1,8 @@
+.carousel .thumbs-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .thumbs-wrapper.axis-vertical .thumb {
+    align-self: center;
+}
