@@ -6,6 +6,7 @@ import CartItem from "./CartItem";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 
 const MyCart = () => {
@@ -53,7 +54,7 @@ const MyCart = () => {
                 <div className="flex justify-between items-center">
                     <h3 className="my-font text-xl font-semibold">Total Orders: {cart.length}</h3>
                     <h3 className="my-font text-xl font-semibold">Total Price: ${totalPrice}</h3>
-                    <button className="my-font btn btn-md bg-[#D1A054] text-white">Pay</button>
+                    <Link to="/dashboard/payment" className="my-font btn btn-md bg-[#D1A054] text-white">Pay</Link>
                 </div>
 
                 <div className="overflow-x-auto border mt-5 rounded-xl ">

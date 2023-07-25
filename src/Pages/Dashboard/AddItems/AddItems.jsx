@@ -1,10 +1,13 @@
 import { ImSpoonKnife } from "react-icons/im";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { useForm } from 'react-hook-form';
+import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { ToastContainer, toast } from "react-toastify";
 
 const image_hosting_token = import.meta.env.VITE_IMAGE_API_KEY;
 const AddItems = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const [axiosSecure] = useAxiosSecure()
+    const { register, handleSubmit, reset } = useForm();
     const image_hosting_url = `https://api.imgbb.com/1/upload?key=${image_hosting_token}`
     const onSubmit = data => {
         const formData = new FormData();
@@ -22,15 +25,24 @@ const AddItems = () => {
                     // console.log(imgURL);
                     const { name, price, category, recipe } = data;
                     const newItem = { name, price: parseFloat(price), category, recipe, image: imgURL }
-                    console.log(newItem)
+                    // console.log(newItem)
+                    axiosSecure.post('/menu', newItem)
+                        .then(data => {
+                            // console.log(data.data)
+                            if (data.data.acknowledged) {
+                                toast("Add Item successfully");
+                                reset();
+                            }
+                        })
                 }
             })
     }
-    console.log(errors);
-    console.log(image_hosting_token)
+    // console.log(errors);
+    // console.log(image_hosting_token)
 
     return (
         <section>
+            <ToastContainer />
             <SectionTitle title="What's New" heading="Add An item" />
             <div className="mx-40 w-auto bg-[#F3F3F3] p-10 mb-10">
                 <form onSubmit={handleSubmit(onSubmit)}>

@@ -12,13 +12,17 @@ import DashBoard from "../layouts/DashBoard";
 import MyCart from "../Pages/Dashboard/MyCart/MyCart";
 import UserHome from "../Pages/Dashboard/UserHome/UserHome";
 import Reservation from "../Pages/Dashboard/Reservation/Reservation";
-import Payment from "../Pages/Dashboard/Payment/Payment";
 import AddReview from "../Pages/Dashboard/AddReview/AddReview";
 import MyBookings from "../Pages/Dashboard/MyBookings/MyBookings";
 import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
 import AllUser from "../Pages/Dashboard/AllUser/AllUser";
 import AddItems from "../Pages/Dashboard/AddItems/AddItems";
 import AdminRoute from "./AdminRoute";
+import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
+import ManageBookings from "../Pages/Dashboard/ManageBookings/ManageBookings";
+import Payment from "../Pages/Dashboard/Payment/Payment";
+import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
+
 
 export const router = createBrowserRouter([
     {
@@ -57,19 +61,41 @@ export const router = createBrowserRouter([
         element: <PrivateRouter><DashBoard /></PrivateRouter>,
         children: [
             {
-                path: 'user-home',
-                element: <UserHome />
+                path: "admin-home",
+                element: <AdminRoute><AdminHome /></AdminRoute>
+            },
+            {
+                path: "all-users",
+                element: <AdminRoute><AllUser /></AdminRoute>
             },
             {
                 path: 'add-item',
                 element: <AdminRoute><AddItems /></AdminRoute>
             },
             {
+                path: 'manage-item',
+                element: <AdminRoute><ManageItems /></AdminRoute>
+            },
+            {
+                path: 'manage-bookings',
+                element: <AdminRoute><ManageBookings /></AdminRoute>
+            },
+
+            {
+                path: 'user-home',
+                element: <UserHome />
+            },
+
+            {
                 path: 'reservation',
                 element: <Reservation />
             },
             {
                 path: 'payment-history',
+                element: < PaymentHistory />
+            },
+            {
+                path: 'payment',
                 element: < Payment />
             },
             {
@@ -84,14 +110,7 @@ export const router = createBrowserRouter([
                 path: 'bookings',
                 element: <MyBookings />
             },
-            {
-                path: "admin-home",
-                element: <AdminHome />
-            },
-            {
-                path: "all-users",
-                element: <AllUser />
-            },
+
         ]
     },
     {
