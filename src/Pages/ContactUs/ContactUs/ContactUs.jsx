@@ -10,7 +10,7 @@ const ContactUs = () => {
     return (
         <div className="container mx-auto">
             <Helmet>
-                <title>Bistro Boss || Contact Us</title>
+                <title>Eclipse Blend & Blossom || Contact Us</title>
             </Helmet>
 
             <PageCover image={contactImage} title="Contact Us" subTitle="IF food is delicious please contact us" />

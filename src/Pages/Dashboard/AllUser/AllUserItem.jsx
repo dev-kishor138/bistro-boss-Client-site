@@ -20,11 +20,11 @@ const AllUserItem = ({ user, index, handleDeleteItem, handleMakeAdmin }) => {
             </td>
             <td>
                 {
-                    user.role === 'admin' ? "Admin" : <button onClick={() => handleMakeAdmin(_id)} className="btn text-xl bg-[#0088fe] text-white hover:bg-[transparent] hover:text-black"><FaUserShield /></button>
+                    user.role === 'admin' ? "Admin" : <button onClick={() => handleMakeAdmin(_id)} className="btn text-xl bg-[#0088fe] text-white hover:bg-[transparent] hover:text-[#0088fe]"><FaUserShield /></button>
                 }
             </td>
             <th>
-                <button onClick={() => handleDeleteItem(_id)} className="btn text-xl bg-[#B91C1C] text-white hover:bg-[transparent] hover:text-black"><BsFillTrashFill /></button>
+                <button onClick={() => handleDeleteItem(_id)} className="btn text-xl bg-[#ff1800] text-white hover:bg-[transparent] hover:text-[#ff1800]"><BsFillTrashFill /></button>
             </th>
         </tr>
     );

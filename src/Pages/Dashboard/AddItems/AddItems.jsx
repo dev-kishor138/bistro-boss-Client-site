@@ -85,7 +85,7 @@ const AddItems = () => {
                         <input type="file" {...register("image", { required: true })} className="file-input file-input-bordered w-full max-w-xs" />
                     </div>
                     <div className=" mt-10 ">
-                        <button className="btn rounded-sm bg-gradient-to-r from-[#835D23] to-[#B58130]  text-white">Add Item <span><ImSpoonKnife /></span></button>
+                        <button className="btn rounded-sm bg-gradient-to-r from-[#ff1800] to-[#ff1900]  text-white">Add Item <span><ImSpoonKnife /></span></button>
                     </div>
                 </form>
             </div>

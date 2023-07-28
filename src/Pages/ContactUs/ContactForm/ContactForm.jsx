@@ -38,7 +38,7 @@ const ContactForm = () => {
 
                     </div>
                     <div className="text-center mt-10 ">
-                        <button className="btn bg-gradient-to-r from-[#835D23] to-[#B58130] rounded-none text-white">Send Message <span><BsFillSendFill /></span></button>
+                        <button className="btn bg-gradient-to-r from-[#ff1800] to-[#ff1900] rounded-none text-white">Send Message <span><BsFillSendFill /></span></button>
                     </div>
                 </form>
             </div>

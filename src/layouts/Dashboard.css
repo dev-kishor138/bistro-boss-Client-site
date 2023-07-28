@@ -1,0 +1,5 @@
+.menu li>*:not(ul):not(details):active,
+.menu li>*:not(ul):not(details).active {
+    background-color: #fff !important;
+    color: #000 !important;
+}

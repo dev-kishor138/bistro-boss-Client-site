@@ -15,7 +15,7 @@ const Menu = () => {
     return (
         <div className="container mx-auto">
             <Helmet>
-                <title>Bistro Boss || Menu</title>
+                <title>Eclipse Blend & Blossom || Menu</title>
             </Helmet>
             <PageCover
                 image={menuImage}

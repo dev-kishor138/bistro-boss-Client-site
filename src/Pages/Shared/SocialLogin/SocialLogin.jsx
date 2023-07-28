@@ -32,7 +32,7 @@ const SocialLogin = () => {
                         Swal.fire({
                             position: 'top-end',
                             icon: 'success',
-                            title: `Welcome To Bistro Boss ${user?.displayName}`,
+                            title: `Welcome To Eclipse Blend & Blossom ${user?.displayName}`,
                             showConfirmButton: false,
                             timer: 3000
                         })

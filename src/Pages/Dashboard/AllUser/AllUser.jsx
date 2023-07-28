@@ -60,7 +60,7 @@ const AllUser = () => {
         <div className="w-full mb-20 mt-0">
             <ToastContainer />
             <Helmet>
-                <title>Bistro Boss || All Users</title>
+                <title>Eclipse Blend & Blossom || All Users</title>
             </Helmet>
             <SectionTitle title="How many?" heading="Manage All User" />
             <div className="bg-white p-10 mx-32">

@@ -5,6 +5,7 @@ import { AuthContext } from '../../../Provider/AuthProvider';
 import Swal from 'sweetalert2';
 import useCart from '../../../hooks/useCart';
 import useAdmin from '../../../hooks/useAdmin';
+// import './NavBar.css'
 
 
 
@@ -23,14 +24,16 @@ const Navbar = () => {
         return accumulator + currentValue.price;
     }, 0)
 
+    // const [activeNav, setActiveNav] = useState(false);
+
     const menuItem = <>
         <li className=' uppercase'><Link className='hover:text-[#EEFF25] ' to="/">Home</Link></li>
-        <li className=' uppercase'><Link className='hover:text-[#EEFF25] active:text-[#EEFF25]' to="/menu">Our Menu</Link></li>
-        <li className=' uppercase'><Link className='hover:text-[#EEFF25] active:text-[#EEFF25]' to="/order">Order Food</Link></li>
+        <li className=' uppercase'><Link className='hover:text-[#EEFF25]' to="/menu">Our Menu</Link></li>
+        <li className=' uppercase'><Link className='hover:text-[#EEFF25]' to="/order">Order Food</Link></li>
         {/* <li className=' uppercase'>{
             isAdmin ? <Link className='hover:text-[#EEFF25] active:text-[#EEFF25]' to="/dashboard/admin-home">Dashboard</Link> : <Link className='hover:text-[#EEFF25] active:text-[#EEFF25]' to="/dashboard/user-home">Dashboard</Link>
         }</li> */}
-        <li className=' uppercase'><Link className='hover:text-[#EEFF25] active:text-[#EEFF25]' to="/contact">Contact Us</Link></li>
+        <li className=' uppercase'><Link className='hover:text-[#EEFF25]' to="/contact">Contact Us</Link></li>
     </>
 
     const handleLogOut = () => {
@@ -60,7 +63,7 @@ const Navbar = () => {
                         {menuItem}
                     </ul>
                 </div>
-                <h2><Link to="/" className="my-font text-2xl uppercase font-bold grid tracking-[2px]">Bistro Boss <span className='text-xl font-semibold tracking-[5px]'>Restaurant</span></Link></h2>
+                <h2><Link to="/" className="my-font text-2xl uppercase font-bold grid tracking-[2px]">Eclipse Blend &  <span className='text-xl font-semibold tracking-[5px]'>Blossom</span></Link></h2>
             </div>
             <div className=" hidden lg:flex">
                 <ul className="menu menu-horizontal">
@@ -95,9 +98,9 @@ const Navbar = () => {
                                         }
                                     </div>
                                 </label>
-                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-info rounded-box w-52">
-                                    <li className='hover:text-white'>
-                                        {isAdmin ? <Link to="/dashboard/admin-home" className="justify-between className='hover:text-white'">
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow bg-white text-black w-52">
+                                    <li className=''>
+                                        {isAdmin ? <Link to="/dashboard/admin-home" target="_blank" className="justify-between className='hover:text-white'">
                                             {user?.displayName}
                                             <span className="badge">New</span>
                                         </Link> : <Link to="/dashboard/user-home" className="justify-between className='hover:text-white'">

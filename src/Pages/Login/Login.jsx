@@ -50,7 +50,7 @@ const Login = () => {
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: `Welcome To Bistro Boss ${user?.displayName}`,
+                    title: `Welcome To Eclipse Blend & Blossom ${user?.displayName}`,
                     showConfirmButton: false,
                     timer: 3000
                 })
@@ -65,7 +65,7 @@ const Login = () => {
     return (
         <>
             <Helmet>
-                <title>Bistro Boss || Sign In</title>
+                <title>Eclipse Blend & Blossom || Sign In</title>
             </Helmet>
             <div className='container mx-auto'>
                 <section className="bg-cover bg-center min-h-screen lg:px-24 py-10" style={{ backgroundImage: `url("${bgImage}")` }}>

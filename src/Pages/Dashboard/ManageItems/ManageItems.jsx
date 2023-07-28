@@ -90,10 +90,10 @@ const ManageItems = () => {
                                         ${item.price}
                                     </td>
                                     <td>
-                                        <button className="btn text-xl bg-[#0088fe] text-white hover:bg-[transparent] hover:text-black"><FaPenToSquare /></button>
+                                        <button className="btn text-xl  bg-[#0088fe] text-white hover:bg-[transparent] hover:text-[#0088fe] "><FaPenToSquare /></button>
                                     </td>
                                     <td>
-                                        <button onClick={() => handleDelete(item)} className="btn text-xl bg-[#B91C1C] text-white hover:bg-[transparent] hover:text-black"><BsFillTrashFill /></button>
+                                        <button onClick={() => handleDelete(item)} className="btn text-xl bg-[#ff1800] text-white hover:bg-[transparent] hover:text-[#ff1800]"><BsFillTrashFill /></button>
                                     </td>
                                 </tr>)
                             }

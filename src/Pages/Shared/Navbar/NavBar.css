@@ -1,0 +1,4 @@
+.menu li>*:not(ul):not(details):active {
+    background: transparent !important;
+    color: yellow !important;
+}

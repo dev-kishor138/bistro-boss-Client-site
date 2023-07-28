@@ -47,7 +47,7 @@ const MyCart = () => {
         <div className="w-full mb-20 mt-0">
             <ToastContainer />
             <Helmet>
-                <title>Bistro Boss || My Cart</title>
+                <title>Eclipse Blend & Blossom || My Cart</title>
             </Helmet>
             <SectionTitle title="My Cart" heading="Wanna Add more?" />
             <div className="bg-white p-10 mx-32">

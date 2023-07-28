@@ -9,7 +9,7 @@ const MenuItem = ({ item }) => {
                 <h4 className="text-xl my-font">{name}--------------------</h4>
                 <p >{recipe}</p>
             </div>
-            <p className="text-[#BB8506]">${price}</p>
+            <p className="text-[#ff1800]">${price}</p>
         </div>
     );
 };

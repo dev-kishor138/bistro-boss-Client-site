@@ -1,12 +1,14 @@
 import { FaBars, FaHome, FaUsers } from 'react-icons/fa';
 import { AiFillHome, AiOutlineBars, AiOutlineShoppingCart } from 'react-icons/ai';
-import { BsCalendar3, BsFillBagFill, BsJournalBookmarkFill, BsWallet2 } from 'react-icons/bs';
+import { BsCalendar3, BsFillBagFill, BsWallet2 } from 'react-icons/bs';
 import { VscPreview } from 'react-icons/vsc';
 import { LuCalendarHeart } from 'react-icons/lu';
 import { GrContact } from 'react-icons/gr';
 import { ImSpoonKnife } from 'react-icons/im';
 import { NavLink, Outlet } from 'react-router-dom';
 import useAdmin from '../hooks/useAdmin';
+
+import './Dashboard.css'
 
 
 
@@ -24,19 +26,19 @@ const DashBoard = () => {
                 <label htmlFor="my-drawer-2" className="cursor-pointer text-2xl absolute top-5 left-10 drawer-button lg:hidden"><FaBars /></label>
 
             </div>
-            <div className="drawer-side bg-[#0088fe] text-center">
+            <div className="drawer-side bg-[#ff1800] text-center text-[#fff]">
                 <label htmlFor="my-drawer-2" className="drawer-overlay "></label>
-                <h2><NavLink to="/" className="my-font text-xl mt-3 uppercase font-bold grid tracking-[2px]">Bistro Boss <span className='text-md font-semibold tracking-[2px]'>Restaurant</span></NavLink></h2>
-                <ul className="menu p-4 w-60 mt-5 text-[#000] my-font">
+                <h2><NavLink to="/" className="my-font text-xl mt-3 uppercase font-bold grid tracking-[2px]">Eclipse Blend & <span className='text-md font-semibold tracking-[2px]'> Blossom</span></NavLink></h2>
+                <ul className="menu p-4 w-60 mt-5 text-[#fff] my-font">
                     {/* Sidebar content here */}
                     {
                         isAdmin ?
                             <>
-                                <li><NavLink to="/dashboard/admin-home"><AiFillHome />Admin Home</NavLink></li>
-                                <li><NavLink to="/dashboard/add-item"><ImSpoonKnife />Add Items</NavLink></li>
-                                <li><NavLink to="/dashboard/manage-item"><AiOutlineBars />Manage Item</NavLink></li>
-                                <li><NavLink to="/dashboard/manage-bookings"><BsJournalBookmarkFill />Manage Bookings</NavLink></li>
-                                <li><NavLink to="/dashboard/all-users"><FaUsers />All Users</NavLink></li>
+                                <li><NavLink className="hover:text-[#fff]" to="/dashboard/admin-home"><AiFillHome />Admin Home</NavLink></li>
+                                <li><NavLink className="hover:text-[#fff]" to="/dashboard/add-item"><ImSpoonKnife />Add Items</NavLink></li>
+                                <li><NavLink className="hover:text-[#fff]" to="/dashboard/manage-item"><AiOutlineBars />Manage Item</NavLink></li>
+                                {/* <li><NavLink className="hover:text-[#fff]" to="/dashboard/manage-bookings"><BsJournalBookmarkFill />Manage Bookings</NavLink></li> */}
+                                <li><NavLink className="hover:text-[#fff]" to="/dashboard/all-users"><FaUsers />All Users</NavLink></li>
 
                             </>
                             :

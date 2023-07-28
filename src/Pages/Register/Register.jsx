@@ -70,7 +70,7 @@ const Register = () => {
     return (
         <>
             <Helmet>
-                <title>Bistro Boss || Sign Up</title>
+                <title>Eclipse Blend & Blossom || Sign Up</title>
             </Helmet>
             <div className='container mx-auto'>
                 <section className="bg-cover bg-center min-h-screen lg:px-24 py-10" style={{ backgroundImage: `url("${bgImage}")` }}>

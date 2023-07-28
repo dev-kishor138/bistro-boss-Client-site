@@ -8,7 +8,7 @@ const OrderFood = () => {
     return (
         <div className="container mx-auto">
             <Helmet>
-                <title>Bistro Boss || Order Food</title>
+                <title>Eclipse Blend & Blossom || Order Food</title>
             </Helmet>
             <PageCover title="Order Food" subTitle="Would you like to try a dish?" image={orderImage} />
             <FoodsTab />

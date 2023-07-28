@@ -26,7 +26,7 @@ const CartItem = ({ item, index, handleDeleteItem }) => {
                 ${price}
             </td>
             <th>
-                <button onClick={() => handleDeleteItem(_id)} className="btn text-xl bg-[#B91C1C] text-white hover:bg-[transparent] hover:text-black"><BsFillTrashFill /></button>
+                <button onClick={() => handleDeleteItem(_id)} className="btn text-xl bg-[#ff1800] text-white hover:bg-[transparent] hover:text-[#ff1800]"><BsFillTrashFill /></button>
             </th>
         </tr>
     );
