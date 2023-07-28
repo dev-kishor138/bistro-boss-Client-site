@@ -1,13 +1,13 @@
-import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+// import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { BsFillSendFill } from "react-icons/bs";
 
 
 const ContactForm = () => {
     return (
-        <section className="lg:my-20 lg:mx-40">
-            <SectionTitle title="Send us a message" heading="Contact form" />
+        <section className=" lg:mx-20">
 
-            <div className="bg-[#F3F3F3] px-10 py-20">
+
+            <div className="bg-[#F3F3F3] px-10 py-2">
                 <form className="grid">
                     <div className="flex justify-between items-center gap-3">
                         <div className="form-control w-full">

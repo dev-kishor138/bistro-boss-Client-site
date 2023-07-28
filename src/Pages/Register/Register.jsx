@@ -112,11 +112,11 @@ const Register = () => {
                                     </div>
 
                                     <div className="mt-5">
-                                        <input type='submit' className="btn rounded-md w-full hover:text-black bg-[#D1A054] text-white" value="Sign Up" />
+                                        <input type='submit' className="btn rounded-md w-full hover:text-black bg-[#0088fe] text-white" value="Sign Up" />
                                     </div>
                                 </form>
                                 <div className='text-center my-3'>
-                                    <Link to="/login" className="  link link-hover text-[#D1A054] mb-2">Already registered? Go to log in</Link>
+                                    <Link to="/login" className="  link link-hover text-[#0088fe] mb-2">Already registered? Go to log in</Link>
                                 </div>
                                 <SocialLogin />
                             </div>

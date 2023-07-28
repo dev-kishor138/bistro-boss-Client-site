@@ -54,13 +54,13 @@ const MyCart = () => {
                 <div className="flex justify-between items-center">
                     <h3 className="my-font text-xl font-semibold">Total Orders: {cart.length}</h3>
                     <h3 className="my-font text-xl font-semibold">Total Price: ${totalPrice}</h3>
-                    <Link to="/dashboard/payment" className="my-font btn btn-md bg-[#D1A054] text-white">Pay</Link>
+                    <Link to="/dashboard/payment" className="my-font btn btn-md bg-[#0088fe] text-white">Pay</Link>
                 </div>
 
                 <div className="overflow-x-auto border mt-5 rounded-xl ">
                     <table className="table">
                         {/* head */}
-                        <thead className="bg-[#D1A054] text-white uppercase h-16">
+                        <thead className="bg-[#0088fe] text-white uppercase h-16">
                             <tr>
                                 <th>
                                     SlN

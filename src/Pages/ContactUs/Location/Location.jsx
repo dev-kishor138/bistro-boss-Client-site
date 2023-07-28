@@ -12,14 +12,14 @@ const Location = () => {
 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:mx-40 gap-5">
                 <div className="h-[200px] border p-5 relative">
-                    <button className="btn w-full rounded-none bg-[#D1A054] text-white text-xl absolute top-0 left-0"><FiPhoneCall /></button>
+                    <button className="btn w-full rounded-none bg-[#0088fe] text-white text-xl absolute top-0 left-0"><FiPhoneCall /></button>
                     <div className="bg-[#F3F3F3] w-full h-[150px] flex flex-col justify-center items-center">
                         <h3 className="text-md mb-2 font-normal uppercase">Phone</h3>
                         <p className="text-xs">+38 (012) 34 56 789</p>
                     </div>
                 </div>
                 <div className="h-[200px] border p-5 relative">
-                    <button className="btn w-full rounded-none bg-[#D1A054] text-white text-xl absolute top-0 left-0">
+                    <button className="btn w-full rounded-none bg-[#0088fe] text-white text-xl absolute top-0 left-0">
                         <FaLocationDot />
                     </button>
 
@@ -30,7 +30,7 @@ const Location = () => {
                     </div>
                 </div>
                 <div className="h-[200px] border p-5 relative">
-                    <button className="btn w-full rounded-none bg-[#D1A054] text-white text-xl absolute top-0 left-0"><PiClockCountdownFill /></button>
+                    <button className="btn w-full rounded-none bg-[#0088fe] text-white text-xl absolute top-0 left-0"><PiClockCountdownFill /></button>
                     <div className="bg-[#F3F3F3] w-full h-[150px] flex flex-col justify-center items-center">
                         <h3 className="text-md mb-2 font-normal uppercase">Working Hours</h3>
                         <p className="text-xs">Mon - Fri: 08:00 - 22:00 <br />

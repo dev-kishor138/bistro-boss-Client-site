@@ -44,7 +44,7 @@ const AddItems = () => {
         <section>
             <ToastContainer />
             <SectionTitle title="What's New" heading="Add An item" />
-            <div className="mx-40 w-auto bg-[#F3F3F3] p-10 mb-10">
+            <div className="mx-40 w-auto bg-[#F3F3F3] px-10 py-1 mb-10">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="form-control w-full">
                         <label className="label">
@@ -52,7 +52,7 @@ const AddItems = () => {
                         </label>
                         <input type="text" {...register("name", { required: true, maxLength: 80 })} placeholder="Recipe Name" className="input input-bordered w-full" />
                     </div>
-                    <div className="grid md:grid-cols-2">
+                    <div className="grid md:grid-cols-2 gap-2">
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Category*</span>

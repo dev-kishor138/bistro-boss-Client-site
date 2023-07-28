@@ -20,7 +20,7 @@ const AllUserItem = ({ user, index, handleDeleteItem, handleMakeAdmin }) => {
             </td>
             <td>
                 {
-                    user.role === 'admin' ? "Admin" : <button onClick={() => handleMakeAdmin(_id)} className="btn text-xl bg-[#D1A054] text-white hover:bg-[transparent] hover:text-black"><FaUserShield /></button>
+                    user.role === 'admin' ? "Admin" : <button onClick={() => handleMakeAdmin(_id)} className="btn text-xl bg-[#0088fe] text-white hover:bg-[transparent] hover:text-black"><FaUserShield /></button>
                 }
             </td>
             <th>

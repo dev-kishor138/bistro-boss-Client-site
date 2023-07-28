@@ -71,7 +71,7 @@ const AllUser = () => {
                 <div className="overflow-x-auto border mt-5 rounded-xl ">
                     <table className="table">
                         {/* head */}
-                        <thead className="bg-[#D1A054] text-white uppercase h-16">
+                        <thead className="bg-[#0088fe] text-white uppercase h-16">
                             <tr>
                                 <th>
                                     SlN

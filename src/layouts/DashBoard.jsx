@@ -24,7 +24,7 @@ const DashBoard = () => {
                 <label htmlFor="my-drawer-2" className="cursor-pointer text-2xl absolute top-5 left-10 drawer-button lg:hidden"><FaBars /></label>
 
             </div>
-            <div className="drawer-side bg-[#D1A054] text-center">
+            <div className="drawer-side bg-[#0088fe] text-center">
                 <label htmlFor="my-drawer-2" className="drawer-overlay "></label>
                 <h2><NavLink to="/" className="my-font text-xl mt-3 uppercase font-bold grid tracking-[2px]">Bistro Boss <span className='text-md font-semibold tracking-[2px]'>Restaurant</span></NavLink></h2>
                 <ul className="menu p-4 w-60 mt-5 text-[#000] my-font">
@@ -51,8 +51,8 @@ const DashBoard = () => {
                     }
 
                     <div className="divider before:bg-[#fff] after:bg-[#fff]"></div>
-                    <li><NavLink to="/"><FaHome />Home</NavLink></li>
-                    <li><NavLink to="/menu"><FaBars />Menu</NavLink></li>
+                    <li><NavLink to="/"><FaHome />View Store</NavLink></li>
+                    <li><NavLink to="/menu"><FaBars />Products</NavLink></li>
                     <li><NavLink to="/shop"><BsFillBagFill />Shop</NavLink></li>
                     <li><NavLink to="/contact"><GrContact />contact</NavLink></li>
                 </ul>
