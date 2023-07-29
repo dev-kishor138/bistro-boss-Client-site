@@ -20,7 +20,7 @@ const SocialLogin = () => {
                 const createdUser = result.user;
                 console.log(createdUser);
                 const userInfo = { name: createdUser.displayName, email: createdUser.email }
-                fetch(`http://localhost:5000/users`, {
+                fetch(`https://bistro-boss-server-kishormahmud138.vercel.app/users`, {
                     method: "POST",
                     headers: {
                         'content-type': "application/json"

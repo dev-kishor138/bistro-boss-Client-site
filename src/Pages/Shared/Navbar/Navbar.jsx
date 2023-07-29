@@ -69,7 +69,7 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal">
                     {menuItem}
                 </ul>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 items-center'>
                     {isAdmin ? '' : <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle">
                             <div className="indicator">

@@ -16,7 +16,7 @@ const FoodCard = ({ item }) => {
         console.log(item)
         if (user && user.email) {
             const itemCart = { menuItemId: _id, email: user.email, name, image, price }
-            fetch('http://localhost:5000/carts', {
+            fetch('https://bistro-boss-server-kishormahmud138.vercel.app/carts', {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'
